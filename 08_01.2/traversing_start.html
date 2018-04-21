@@ -7,6 +7,18 @@
     <script type="text/javascript" src="../jquery-3.0.0.js"></script>
     <script type="text/javascript">
         $("document").ready(function() {
+          // $("#example").children().css("border", "3px solid red");
+// $("#exmaple").find("#para4").css("border", "3px dotted purple")
+
+// use each function to iterate over a set of elements and operate on them
+var leftmargin = 0;
+var border = 3;
+$("#example.p").each(function (index, element) {
+  $(element).css("border", border + "px dotted purple").css("margin-left", leftmargin);
+  border += 2;
+  leftmargin += 1;
+})
+
         });
     </script>
 </head>
